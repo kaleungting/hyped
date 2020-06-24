@@ -1,6 +1,7 @@
 import React from "react";
 import "./directory.styles.scss";
 import MenuItem from "../menu-item/menu-item.component";
+import BACKGROUND_IMAGES from "../../assets/background";
 
 class Directory extends React.Component {
   constructor() {
@@ -45,12 +46,22 @@ class Directory extends React.Component {
           linkUrl: "shop/supreme",
         },
       ],
+      images: BACKGROUND_IMAGES,
     };
   }
 
   render() {
+    let { images } = this.state;
+    let bg = images[Math.floor(Math.random() * images.length)];
+
     return (
       <div className="directory-menu">
+        <div
+          className="splash"
+          style={{
+            backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("${bg.imageUrl}")`,
+          }}
+        />
         {this.state.sections.map(({ id, ...otherSectionProps }) => (
           <MenuItem key={id} {...otherSectionProps} />
         ))}
