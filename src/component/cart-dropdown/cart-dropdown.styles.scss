@@ -1,7 +1,7 @@
 .cart-dropdown {
   position: absolute;
   width: 300px;
-  height: 340px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -12,13 +12,20 @@
   z-index: 5;
 
   .cart-items {
-    height: 240px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     overflow: scroll;
   }
 
-  button {
-    margin-top: auto;
+  .total {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid gray;
   }
+
+  // button {
+  //   margin-top: auto;
+  // }
 }
