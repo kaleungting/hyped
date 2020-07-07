@@ -3,5 +3,14 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 80px;
-}
 
+  .splash {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 0 7.5px 15px;
+    border: 1px solid black;
+  }
+}
