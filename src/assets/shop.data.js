@@ -1,7 +1,7 @@
 /* Used as starting data for ShopPage */
 
-const SHOP_DATA = [
-  {
+const SHOP_DATA = {
+  palace: {
     id: 1,
     title: "Palace",
     routeName: "palace",
@@ -51,7 +51,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  kith: {
     id: 2,
     title: "Kith",
     routeName: "kith",
@@ -100,7 +100,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  fearofgod: {
     id: 3,
     title: "Fear of God",
     routeName: "fog",
@@ -156,7 +156,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  "off-white": {
     id: 4,
     title: "Off-White",
     routeName: "off-white",
@@ -198,7 +198,7 @@ const SHOP_DATA = [
       },
     ],
   },
-  {
+  supreme: {
     id: 5,
     title: "Supreme",
     routeName: "supreme",
@@ -254,6 +254,6 @@ const SHOP_DATA = [
       },
     ],
   },
-];
+};
 
 export default SHOP_DATA;
