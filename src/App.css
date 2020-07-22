@@ -50,3 +50,11 @@ a {
 * {
   box-sizing: border-box;
 }
+.body-container {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  width: 80%;
+}
