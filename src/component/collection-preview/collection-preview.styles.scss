@@ -9,7 +9,10 @@
   }
 
   .preview {
-    display: flex;
-    justify-content: space-between;
+
+    & .collection-item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 }

@@ -14,6 +14,8 @@ import { setCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
 
+// import { selectCollectionPreview } from "./redux/shop/shop.selectors";
+
 class App extends React.Component {
   unsubscribeFromAuth = null;
   componentDidMount() {
@@ -31,6 +33,10 @@ class App extends React.Component {
       } else {
         setCurrentUser(userAuth);
       }
+      // addCollectionAndDocuments(
+      //   "collection",
+      //   collectionsArray.map(({ title, items }) => ({ title, items }))
+      // );
     });
   }
 
@@ -40,26 +46,20 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="body-container">
-        <div className="body">
-          <Header />
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/shop" component={ShopPage} />
-            <Route path="/checkout" component={CheckOutPage} />
-            <Route
-              exact
-              path="/signin"
-              render={() =>
-                this.props.currentUser ? (
-                  <Redirect path="/" />
-                ) : (
-                  <UserAuthPage />
-                )
-              }
-            />
-          </Switch>
-        </div>
+      <div className="body">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/shop" component={ShopPage} />
+          <Route path="/checkout" component={CheckOutPage} />
+          <Route
+            exact
+            path="/signin"
+            render={() =>
+              this.props.currentUser ? <Redirect path="/" /> : <UserAuthPage />
+            }
+          />
+        </Switch>
       </div>
     );
   }

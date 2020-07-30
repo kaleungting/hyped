@@ -91,23 +91,16 @@ const SHOP_DATA = {
         imageUrl: "/images/shop/kith/varsity.png",
         price: 160,
       },
-      {
-        id: 14,
-        name: "Nike Red High Tops",
-        // imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        imageUrl: "/images/shop-img/sneakers/nikes-red.png",
-        price: 160,
-      },
     ],
   },
   fearofgod: {
     id: 3,
     title: "Fear of God",
-    routeName: "fog",
+    routeName: "fearofgod",
     items: [
       {
         id: 12,
-        name: "Bomber",
+        name: "Bomber Jacket",
         // imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
         imageUrl: "/images/shop/fog/bomber.png",
         price: 805,
@@ -135,14 +128,14 @@ const SHOP_DATA = {
       },
       {
         id: 16,
-        name: "Joggers",
+        name: "Nike x Joggers",
         // imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
         imageUrl: "/images/shop/fog/joggers.png",
         price: 180,
       },
       {
         id: 17,
-        name: "Hoodie",
+        name: "FG Hoodie",
         // imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
         imageUrl: "/images/shop/fog/sweater.png",
         price: 185,

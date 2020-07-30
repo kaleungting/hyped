@@ -4,13 +4,13 @@ import { connect } from "react-redux";
 import { toggleCart } from "../../redux/cart/cart.actions.js";
 import { selectCartItemsCount } from "../../redux/cart/cart.selectors";
 import { createStructuredSelector } from "reselect";
-import "./cart-icon.styles.scss";
+import { CartIconContainer, ItemCountContainer } from "./cart-icon.styles";
 
 const CartIcon = ({ toggleCart, itemCount }) => (
-  <div className="cart-icon" onClick={toggleCart}>
-    <ShoppingIcon className="shopping-icon" />
-    <span className="item-count">{itemCount}</span>
-  </div>
+  <CartIconContainer onClick={toggleCart}>
+    <ShoppingIcon height="36px" width="36px" />
+    <ItemCountContainer>{itemCount}</ItemCountContainer>
+  </CartIconContainer>
 );
 
 const mapDispatchToProps = (dispatch) => ({
