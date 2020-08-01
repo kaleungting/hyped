@@ -25,7 +25,7 @@ export const ImageContainer = styled.div`
 
 export const CollectionFooterContainer = styled.div`
   width: 90%;
-  /* height: 5%; */
+  max-height: 20px;
   display: flex;
   justify-content: space-between;
   font-size: 18px;

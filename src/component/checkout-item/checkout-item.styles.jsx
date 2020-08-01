@@ -7,7 +7,7 @@ const SpanStyle = css`
 export const CheckoutItemContainer = styled.div`
   width: 100%;
   display: flex;
-  min-height: 100px;
+  min-height: 150px;
   border-bottom: 1px solid darkgrey;
   padding: 15px 0;
   font-size: 20px;
