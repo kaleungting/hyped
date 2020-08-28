@@ -2,6 +2,10 @@
     "cSpell.ignoreWords": [
         "browser",
         "browser router",
-        "router"
+        "google",
+        "google signin request",
+        "request",
+        "router",
+        "signin"
     ]
 }

@@ -10,7 +10,7 @@ export const HomepageContainer = styled.div`
 
 export const Splash = styled.div`
   width: 98.5%;
-  height: 500px;
+  height: 400px;
   background-size: cover;
   background-position: center;
   overflow: hidden;
